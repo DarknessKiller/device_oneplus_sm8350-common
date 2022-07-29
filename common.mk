@@ -349,6 +349,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/dolby/dax-default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/dax-default.xml
 
+# OnePlusSettings
+PRODUCT_PACKAGES += \
+    OnePlusSettings
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
