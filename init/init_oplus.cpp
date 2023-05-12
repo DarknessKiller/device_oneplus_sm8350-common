@@ -36,6 +36,9 @@ void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
     auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
 
+    OverrideProperty("ro.rising.chipset", "Snapdragon 888 5G");
+    OverrideProperty("ro.rising.maintainer", "DarknessKiller");
+
     switch (rf_version) {
         case 11: // CN
             if (device == "OnePlus9") {
